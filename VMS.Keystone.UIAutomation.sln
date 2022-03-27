@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMS.Keystone.UIAutomationTests", "VMS.Keystone.UIAutomation\VMS.Keystone.UIAutomationTests.csproj", "{66E4D33A-28F8-4A85-995B-5B210ECF075A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMS.Keystone.UIAutomationLibrary", "VMS.Keystone.UIAutomationLibrary\VMS.Keystone.UIAutomationLibrary.csproj", "{30C183E9-0A0C-46A0-948B-513F97854B5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E4D33A-28F8-4A85-995B-5B210ECF075A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E4D33A-28F8-4A85-995B-5B210ECF075A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E4D33A-28F8-4A85-995B-5B210ECF075A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E4D33A-28F8-4A85-995B-5B210ECF075A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C183E9-0A0C-46A0-948B-513F97854B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C183E9-0A0C-46A0-948B-513F97854B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C183E9-0A0C-46A0-948B-513F97854B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C183E9-0A0C-46A0-948B-513F97854B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D64FE551-BC10-41C2-9FBB-552013D1DD85}
+	EndGlobalSection
+EndGlobal
