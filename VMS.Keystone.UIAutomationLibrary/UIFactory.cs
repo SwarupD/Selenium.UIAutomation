@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace VMS.Keystone.UIAutomationLibrary
+namespace Selenium.UIAutomationLibrary
 {
-    public class UIFactoryClass
+    public class UIFactory
     {
         public IWebDriver driver = null;
 
-        public UIFactoryClass()
+        public UIFactory()
         {
             driver = new ChromeDriver(@"C:\1ProjectRelated\ForTestVSTSProjects");
         }
@@ -27,29 +27,29 @@ namespace VMS.Keystone.UIAutomationLibrary
 
         public void FillUserForm()
         {
-            UIControlsActions.SetDropDown(driver, "TitleId", "Id", "Mr.");
-            UIControlsActions.SetTextInTextBox(driver, "Initial", "Name", "SD");
-            UIControlsActions.SetTextInTextBox(driver, "FirstName", "Name", "Swarup");
-            UIControlsActions.SetTextInTextBox(driver, "MiddleName", "Name", "Dukuria");
-            UIControlsActions.SetRadioButton(driver, "Female", "Name");
-            UIControlsActions.SetCheckBox(driver, "Hindi", "Name");
-            UIControlsActions.SetCheckBox(driver, "english", "Name");
+            UIControlsAction.SetDropDown(driver, "TitleId", "Id", "Mr.");
+            UIControlsAction.SetTextInTextBox(driver, "Initial", "Name", "SD");
+            UIControlsAction.SetTextInTextBox(driver, "FirstName", "Name", "Swarup");
+            UIControlsAction.SetTextInTextBox(driver, "MiddleName", "Name", "Dukuria");
+            UIControlsAction.SetRadioButton(driver, "Female", "Name");
+            UIControlsAction.SetCheckBox(driver, "Hindi", "Name");
+            UIControlsAction.SetCheckBox(driver, "english", "Name");
         }
 
         public void FillUserPopUpForm()
         {
-            UIControlsActions.SetDropDown(driver, "TitleId", "Id", "Mr.");
-            UIControlsActions.SetTextInTextBox(driver, "Initial", "Name", "SD");
-            UIControlsActions.SetTextInTextBox(driver, "FirstName", "Name", "Swarup");
-            UIControlsActions.SetTextInTextBox(driver, "MiddleName", "Name", "Dukuria");
-            UIControlsActions.SetTextInTextBox(driver, "LastName", "Name", "SwarupLastName");
-            UIControlsActions.SetDropDown(driver, "Country", "Id", "India");
+            UIControlsAction.SetDropDown(driver, "TitleId", "Id", "Mr.");
+            UIControlsAction.SetTextInTextBox(driver, "Initial", "Name", "SD");
+            UIControlsAction.SetTextInTextBox(driver, "FirstName", "Name", "Swarup");
+            UIControlsAction.SetTextInTextBox(driver, "MiddleName", "Name", "Dukuria");
+            UIControlsAction.SetTextInTextBox(driver, "LastName", "Name", "SwarupLastName");
+            UIControlsAction.SetDropDown(driver, "Country", "Id", "India");
         }
 
         public void OpenPopUpFormAndFillUserForm()
         {
             string mainWindowHandle = driver.CurrentWindowHandle;
-            UIControlsActions.ClickLink(driver, "HtmlPopup");
+            UIControlsAction.ClickLink(driver, "HtmlPopup");
             Thread.Sleep(4000);
             var windowHandles = driver.WindowHandles;
             foreach (var handle in windowHandles)
@@ -70,15 +70,15 @@ namespace VMS.Keystone.UIAutomationLibrary
 
         public void SaveForm()
         {
-            UIControlsActions.ClickButton(driver, "Save", "Name");
+            UIControlsAction.ClickButton(driver, "Save", "Name");
         }
 
         public void GenerateAlertAndHandle(string actionToPerform, out string alertValue)
         {
-            UIControlsActions.ClickButton(driver, "generate", "Name");
+            UIControlsAction.ClickButton(driver, "generate", "Name");
             if (actionToPerform == "OK")
             {
-                driver.SwitchTo().Alert().Accept();              
+                driver.SwitchTo().Alert().Accept();
             }
             else
             {

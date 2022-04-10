@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
 
-namespace VMS.Keystone.UIAutomationLibrary
+namespace Selenium.UIAutomationLibrary
 {
-    public class UIControlsActions
+    public class UIControlsAction
     {
         public static void SetTextInTextBox(IWebDriver driver, string elementValue, string identifierType, string value)
         {
@@ -39,14 +39,14 @@ namespace VMS.Keystone.UIAutomationLibrary
                 if (driver.FindElement(By.Id(elementValue)).Displayed)
                 {
                     new SelectElement(driver.FindElement(By.Id(elementValue))).SelectByText(value);
-                }                
+                }
             }
             if (identifierType == "Name")
             {
                 if (driver.FindElement(By.Name(elementValue)).Displayed)
                 {
                     new SelectElement(driver.FindElement(By.Name(elementValue))).SelectByText(value);
-                }                
+                }
             }
         }
 
@@ -59,7 +59,7 @@ namespace VMS.Keystone.UIAutomationLibrary
                 if (driver.FindElement(By.Id(elementValue)).Displayed)
                 {
                     rbGender = driver.FindElement(By.Id(elementValue));
-                }                
+                }
 
                 if (!rbGender.Selected)
                 { rbGender.Click(); }
@@ -69,7 +69,7 @@ namespace VMS.Keystone.UIAutomationLibrary
                 if (driver.FindElement(By.Name(elementValue)).Displayed)
                 {
                     rbGender = driver.FindElement(By.Name(elementValue));
-                }               
+                }
 
                 if (!rbGender.Selected)
                 { rbGender.Click(); }
@@ -88,7 +88,7 @@ namespace VMS.Keystone.UIAutomationLibrary
 
                     cbLanguageKnown.Click();
                 }
-                
+
             }
             if (identifierType == "Name")
             {

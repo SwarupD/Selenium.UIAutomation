@@ -8,8 +8,8 @@
     <ProjectGuid>{66E4D33A-28F8-4A85-995B-5B210ECF075A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VMS.Keystone.UIAutomation</RootNamespace>
-    <AssemblyName>VMS.Keystone.UIAutomation</AssemblyName>
+    <RootNamespace>Selenium.UIAutomation</RootNamespace>
+    <AssemblyName>Selenium.UIAutomation</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VMS.Keystone.UIAutomationLibrary\VMS.Keystone.UIAutomationLibrary.csproj">
+    <ProjectReference Include="..\VMS.Keystone.UIAutomationLibrary\Selenium.UIAutomationLibrary.csproj">
       <Project>{30c183e9-0a0c-46a0-948b-513f97854b5f}</Project>
-      <Name>VMS.Keystone.UIAutomationLibrary</Name>
+      <Name>Selenium.UIAutomationLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

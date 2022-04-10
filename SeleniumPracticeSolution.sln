@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMS.Keystone.UIAutomationTests", "VMS.Keystone.UIAutomation\VMS.Keystone.UIAutomationTests.csproj", "{66E4D33A-28F8-4A85-995B-5B210ECF075A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.UIAutomationTests", "VMS.Keystone.UIAutomation\Selenium.UIAutomationTests.csproj", "{66E4D33A-28F8-4A85-995B-5B210ECF075A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMS.Keystone.UIAutomationLibrary", "VMS.Keystone.UIAutomationLibrary\VMS.Keystone.UIAutomationLibrary.csproj", "{30C183E9-0A0C-46A0-948B-513F97854B5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.UIAutomationLibrary", "VMS.Keystone.UIAutomationLibrary\Selenium.UIAutomationLibrary.csproj", "{30C183E9-0A0C-46A0-948B-513F97854B5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

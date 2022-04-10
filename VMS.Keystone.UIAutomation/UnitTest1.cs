@@ -1,13 +1,13 @@
 ﻿ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using VMS.Keystone.UIAutomationLibrary;
+using Selenium.UIAutomationLibrary;
 
 namespace VMS.Keystone.UIAutomationTests
 {
     [TestClass]
     public class UnitTest1
     {
-        UIFactoryClass factoryClass = new UIFactoryClass();
+        UIFactory factoryClass = new UIFactory();
 
         [TestMethod]
         public void VerifyUserFormFilled()
